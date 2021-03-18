@@ -20,7 +20,7 @@
   * IndetationError : unexpected indent 발생
     * 공백에 관한 에러, 띄어쓰기 관련 에러
 
-## 콘솔 입력의 기본
+# 콘솔 입력의 기본
 
 * input() : 사용자가 콘솔 창에 직접 입력한 값을 변수에 할당(=저장)
   * ex) a = input("값을 입력하세요 : ")
