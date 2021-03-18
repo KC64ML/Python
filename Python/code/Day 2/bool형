@@ -1,0 +1,8 @@
+a = True
+b = False
+
+print("true and false", a and b)
+print("true and true", a and b)
+print("true or true", a or b)
+print("true or true", a or b)
+print("not true", not b)
