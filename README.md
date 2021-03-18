@@ -129,8 +129,8 @@
 * ASCII CODE : 영문 키보드를 사용해 입력할 수 있는 모든 문자에 숫자를 매칭시킨 표준 체계
   * 아스키코드 출력 : print(ord("A"))
 
-![ascii code](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 2\ascii code.png)
 
+![ascii code](https://user-images.githubusercontent.com/72541544/111650369-91cbaf80-8848-11eb-9fb9-a15fa103b45c.png)
 ###### 사진 주소 : [인덱싱과 슬라이싱 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://dnd.goorm.io/learn/lecture/18640/한-눈에-끝내는-파이썬3-기초/lesson/897877/인덱싱과-슬라이싱)
 
 * 인덱싱
@@ -162,8 +162,7 @@
   * 문자열에 포함된 변수 값이 계속 변경된 코드 가독성이 떨어지지만
   * 포매팅을 이용하면 좀 더 가독성을 높일 수 있다.
 
-![포맷 코드](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 2\포맷 코드.png)
-
+![포맷 코드](https://user-images.githubusercontent.com/72541544/111650328-88424780-8848-11eb-9d5b-2e3d10e6b226.png)
 ###### 사진 주소 : [문자열 포매팅1 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://dnd.goorm.io/learn/lecture/18640/한-눈에-끝내는-파이썬3-기초/lesson/897878/문자열-포매팅1)
 
 * %d, %s와 같은 포맷 코드를 입력한 뒤 문자열 뒤에 %를 시작으로 변숫값을 작성한다.
@@ -189,8 +188,7 @@
 * format() 을 이용하여 포맷 코드에 특정 값을 추가하여 출력 폭을 지정할 수 있다.
   * "{인덱스값 or 변수:(출력형식)}".format(요소) 형식으로 입력
 
-![폭](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 2\폭.png)
-
+![폭](https://user-images.githubusercontent.com/72541544/111650397-98f2bd80-8848-11eb-9442-2b5c5662b1c7.png)
 ###### 사진 주소 : [문자열 포매팅2 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://dnd.goorm.io/learn/lecture/18640/한-눈에-끝내는-파이썬3-기초/lesson/897879/문자열-포매팅2)
 
 * f 문자열 포매팅 : 3.6버전에서 새로 사용할 수 있게 된 포매팅 방식
