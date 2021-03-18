@@ -131,7 +131,7 @@
 
 
 ![ascii code](https://user-images.githubusercontent.com/72541544/111650369-91cbaf80-8848-11eb-9fb9-a15fa103b45c.png)
-###### 사진 주소 : [인덱싱과 슬라이싱 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://edu.goorm.io/)
+###### 사진 주소 : [인덱싱과 슬라이싱 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * 인덱싱
   * 문자열은 하나로 보일지라도 문자마다 인덱싱이 가능하다.
@@ -163,7 +163,7 @@
   * 포매팅을 이용하면 좀 더 가독성을 높일 수 있다.
 
 ![포맷 코드](https://user-images.githubusercontent.com/72541544/111650328-88424780-8848-11eb-9d5b-2e3d10e6b226.png)
-###### 사진 주소 : [문자열 포매팅1 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://edu.goorm.io/)
+###### 사진 주소 : [문자열 포매팅1 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * %d, %s와 같은 포맷 코드를 입력한 뒤 문자열 뒤에 %를 시작으로 변숫값을 작성한다.
   * city = "seoul"
@@ -189,7 +189,7 @@
   * "{인덱스값 or 변수:(출력형식)}".format(요소) 형식으로 입력
 
 ![폭](https://user-images.githubusercontent.com/72541544/111650397-98f2bd80-8848-11eb-9442-2b5c5662b1c7.png)
-###### 사진 주소 : [문자열 포매팅2 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://edu.goorm.io/)
+###### 사진 주소 : [문자열 포매팅2 - 한 눈에 끝내는 파이썬3 기초 (goorm.io)](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * f 문자열 포매팅 : 3.6버전에서 새로 사용할 수 있게 된 포매팅 방식
 * format() 함수처럼 포맷 코드는 그대로 '{}'를 사용하고 문자열 앞에 f만 붙여 쉽게 사용 가능
