@@ -200,7 +200,7 @@
 * 함수는 특정 기능을 수행하기 위해 제작된 명령 묶음
 * 함수명 옆의 괄호 안에 들어가는 값을 전달 인자
 
-![function](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 3\function.png)
+![function](https://user-images.githubusercontent.com/72541544/111740155-971c0f00-88c7-11eb-86c6-ca2258af9640.png)
 
 ###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
@@ -236,7 +236,7 @@
 * 리스트 함수
   * 추가하는 함수
 
-![listfunction](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 3\listfunction.png)
+![listfunction](https://user-images.githubusercontent.com/72541544/111740157-97b4a580-88c7-11eb-8813-9628650ac438.png)
 
 ###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
@@ -246,21 +246,21 @@
 * extend : 리스트값을 넣으면 리스트 괄호가 풀리고 그 리스트 안에 포함되었던 요소의 개수만큼 값이 입력된다.
   * 삭제하는 함수
 
-![deletefunction](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 3\deletefunction.png)
+![deletefunction](https://user-images.githubusercontent.com/72541544/111740125-8c617a00-88c7-11eb-8a1b-a37eb2986ff5.png)
 
 ###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * 리스트 요소들이 순서대로 정리
   * 요소들을 정렬하고 순서를 바꾸는 함수
 
-![selectchangefunction](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 3\selectchangefunction.png)
+![selectchangefunction](https://user-images.githubusercontent.com/72541544/111740162-984d3c00-88c7-11eb-8b96-ce78e654f3cb.png)
 
 ###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * sort() : 오름차순 정렬, reverse() : 내림차순 정렬
   * 리스트의 정보를 알아내는 함수
 
-![listinformationfunction](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 3\listinformationfunction.png)
+![listinformationfunction](https://user-images.githubusercontent.com/72541544/111740158-984d3c00-88c7-11eb-8cb0-c0e1661e832c.png)
 
 ###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
  
@@ -302,7 +302,8 @@
 
 * 딕셔너리 함수
 
-![딕셔너리함수](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 3\딕셔너리함수.png)
+![딕셔너리함수](https://user-images.githubusercontent.com/72541544/111740152-971c0f00-88c7-11eb-996b-95701c222877.png)
+
 ###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 
