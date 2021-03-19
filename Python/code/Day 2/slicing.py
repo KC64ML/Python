@@ -5,3 +5,6 @@ c = a[6:-11]
 print(b)
 print(c)
 
+
+
+
