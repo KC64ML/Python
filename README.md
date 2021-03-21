@@ -346,7 +346,9 @@ mem.clear()	print(mem) => {}
 
 * 변하지 않는 Tuple
 
-  * 사진 : 종류, 구성, 타입
+![변하지않는 튜플](https://user-images.githubusercontent.com/72541544/111896500-67067480-8a5d-11eb-9f6c-a6356f90e49f.png)
+###### 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
+
   * Immutable 형식으로 값을 수정할 수 없다.
   * 리스트와 딕셔너리는 Mutable형식으로 값을 언제든지 추가 및 수정할 수 있다.
   * 데이터 처리할 때는 리스트와 딕셔너리를 주로 사용한다.
