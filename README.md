@@ -423,13 +423,13 @@ mem.clear()	print(mem) => {}
   * tuple() : 다른 자료형을 튜플로 변환
 * 집합과 사용할 수 있는 함수
 
-![집합 함수](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 5\집합 함수.png)
-
-사진 주소 : 
+![집합 함수](https://user-images.githubusercontent.com/72541544/112588553-ef608d00-8e42-11eb-8f2e-2cd8e3b41af6.png)
+사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * 집합의 요소를 다루는 다양한 함수
 
-  ![집합 요소와 다양한 함수](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 5\집합 요소와 다양한 함수.png)
+ ![집합 요소와 다양한 함수](https://user-images.githubusercontent.com/72541544/112588551-eec7f680-8e42-11eb-84b7-92c3df64857b.png)
+사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
 * * 튜플은 한개의 원소로 사용할 수 있지만 리스트와 집합 자체는 집합의 원소로 사용할 수 없다.
   * update는 여러 값으로 인지해 각각 한 개의 원소로 저장한다.
@@ -578,7 +578,8 @@ mem.clear()	print(mem) => {}
     * global
       * 불가피하게 전역변수를 수정해야 하는 일이 발생한다면 global 키워드를 사용한다.
 
-    ![global](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 5\global.png)
+![global](https://user-images.githubusercontent.com/72541544/112588534-e7a0e880-8e42-11eb-9a93-607ec5134ab2.png)
+사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 
     * ex) def plusNum(n) :
           return n + num
