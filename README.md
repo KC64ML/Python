@@ -679,6 +679,119 @@ mem.clear()	print(mem) => {}
   * f = open("data/test.txt","w")
   * f.close()
 
+* 파일 읽기 및 내용 추가
+
+* ![파일 읽기](https://user-images.githubusercontent.com/72541544/113278267-b03bab80-931c-11eb-9970-a8ed3aa7b417.png)
+
+* 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
+
+  * 파일 함수를 사용한 후 close()함수로 파일을 닫기
+  * 파일이 총 몇 줄인지 확인할 수 없는 경우 while문으로 모든 줄을 읽고 내용이 없으면 break문으로 빠져나오기
+    * a = open("test.txt",'r')
+    * while 1 :
+      * line = a.readline()
+      * if not line : break // line이 None이 되면 (=false) 반복문 탈출
+
+* 개수 제한 없이 값을 입력받을 때 사용 되는 소스
+
+  * list = []
+  * while 1 :
+    * data = input("빈칸을 입력하면 종료합니다.")
+    * if not data : break
+    * list.append(data)
+  * print(list)
+
+* 파일에 내용 추가하기
+
+  * 파일을 쓰기 모드('w')로 열면 기존 내용이 삭제되고 새롭게 쓰인다.
+
+* 추가 모드('a')': 기존 파일에 값을 이어 입력
+
+* with문 : open() 과 close()를 합함
+
+  * with문은 as와 함께 파일 객체 이름을 지정하고 블록을 만든다.
+  * 블록 안의 코드들을 다 실행하고 블록을 벗어나면 자동으로 파일이 닫힌다.
+  * with open("test.txt","w") as f:
+    * for i in range(1, 4) :
+      * data = "%d번째 줄입니다.\n" %i
+      * f.write(data)
+  * with open("test.txt",'r') as f:
+    * lines = f.read()
+
+* 파이썬은 tab과 space를 조심해야한다. (파이썬에서는 space를 사용 tab x)
+
+  * 파일 입력 후 출력
+
+  * A = []
+
+    F = open("test.txt",'r')   // open("test.txt")
+
+    for i in F.readlines() :
+
+      temp = int(i) 
+
+      A.append(temp)
+
+    print(A)
+
+    F.close()
+
+    
+
+  * f = open("data/add.txt",'w')   //open("data/add.txt")
+
+    name = input("당신의 이름은 무엇입니까?\n")
+
+    f.write(str(name))
+
+    f.close()
+
+    a = open("data/add.txt",'r')
+
+    for x in a:
+
+      print(x)
+
+    a.close()
+
+
+
+* 클래스
+
+  * 인스턴스 : 생성된 객체는 클래스의 인스턴스
+
+* class Triangle :
+
+  * 클래스의 다양한 기능들도 클래스 안에서 수행되기 때문에 :를 사용해 범위를 명시해야한다.
+  * pass는 실행할 내용이 없을 때 지나치라는 명시적 역할을 한다.
+  * 객체 이름 = 클래스() 형식 : 클래스 객체 생성
+
+* 클래스 변수, 인스턴스 변수
+
+  * 클래스 변수
+
+    * 클래스 안에서 선언된 변수
+    * 같은 클래스로 만들어진 인스턴스끼리 공유하고 접근이 가능한 변수
+    * 객체에서 클래스 변수 값을 변경하더라도 클래스에는 영향이 가지 않는다.
+
+  * 인스턴스 변수
+
+    * 메소드 : 클래스 안에서 어떠한 기능을 수행하는 함수, 이를 이용해 객체 정보를 지정할 수 있다.
+
+    * 메소드와 일반함수 차이점
+
+      * 메소드는 클래스 안에서 쓰이는 함수
+      * 메소드는 사용자가 전달 인자를 입력하지 않는 매개변수 self를 사용
+      * self는 실제 메소드를 사용할 때 사용자에게 전달 인자를 입력받지 않고 객체를 받는다.
+      * ![self](https://user-images.githubusercontent.com/72541544/113278290-b893e680-931c-11eb-9816-6ef0a6e4535c.png)
+      * 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
+      * 인스턴스 변수 : self.변수이름 형태로 사용하는 변수
+        * 인스턴스 변수는 각 객체의 고윳값 (객체 클래스에 self라는 변수가 있다.)
+        * 각기 다른 객체끼리 공유하지 않으며, 클래스 또한 인스턴스 변수에 접근하고자 할 때 self 없이 변수 이름만으로 접근할 수 없다.
+      * 클래스 변수는 모든 객체가 공유하기 때문에 tri1.cal_count 형식으로 접근 가능
+
+      
+
 
 
 
