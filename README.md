@@ -679,7 +679,6 @@ mem.clear()	print(mem) => {}
   * f = open("data/test.txt","w")
   * f.close()
 
-<<<<<<< HEAD
 * 생성자와 메소드
   * 생성자(Constructor) : 객체 생성과 동시에 초깃값을 설정하는 메소드
     * ![생성자](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 6\생성자.png)
@@ -867,7 +866,28 @@ mem.clear()	print(mem) => {}
     3. 같은 이름으로 자식 클래스에서 재정의한 메소드
        * 메소드 오버라이딩(Method Overriding) : 자식 클래스에서 부모 클래스의 메소드를 재정의하는 것
   * print + print 는 두 줄로 출력된다.
-* 클래스 심화 개념
+
+#### 클래스의 심화 개념
+
+* 같은 정보를 공유하는 인스턴스는 다향성을 가진다.
+* 다중상속
+  * 파이썬에서는 부모 클래스를 여러 개 상속할 수 있다.
+  * MRO(Method Resolution Order, 메소드 탐색 순서)에 따른다.
+    * 파이썬은 다중 상속을 하면 상속을 명시한 클래스 목록 중 왼쪽에서 오른쪽 순서로 메소드를 찾는다.
+      * class Third(First, Second):
+        * First 클래스의 메소드를 실행
+    * 클래스 변수의 이름이 같다면 클래스 메소드의 위치와 상관없이 왼쪽에 있는 클래스의 클래스 변수에 접근한다.
+      * Third(First, Second) 일 때
+      * third.printName()
+        * printName : Second에 있다.
+        * 이럴 경우, 실행은 Second에서 하지만 정적 클래스 변수는 First 클래스의 변수를 출력한다. (79page)
+* 파이썬에서는 오버로딩을 지원하지 않는다.
+  * 같은 이름의 메소드가 여러 번 선언되어 있다면 마지막 메소드가 실행된다.
+* 파이썬은 다른 언어와 다르게 자료형에 대해 굉장히 유연하다.
+* 빈 함수
+  * def empty():
+  * pass
+
 
 
 
