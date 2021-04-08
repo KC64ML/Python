@@ -336,8 +336,11 @@ mem.clear()	print(mem) => {}
   * 딕셔너리에 'C' = 3 을 추가할 때 코드
 * del D['C']
   * 딕셔너리에서 'C':3을 삭제
-
-
+* 딕셔너리에 key가 있는지 확인하기
+  * data = "a"
+  * if data in dic
+  * data가 딕셔너리안에 있다면 true
+  * data가 딕셔너리안에 없다면 false
 
 # 튜플(Tuple)과 집합(Set)
 
