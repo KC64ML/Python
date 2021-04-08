@@ -495,7 +495,7 @@ mem.clear()	print(mem) => {}
   * 딕셔너리에 사용할 때는 Items라는 객체로 접근해야 한다.
 * for문 활용
   * for in 값의 집합자료형
-  * dic = {"human":"사람", "dog":"강아지"}
+  * dic = {"human" : "사람", "dog" : "강아지", "carrot" : "당근"}
   * oddnums = (1, 3, 5, 7, 9)
   * evennums = [6, 8, 10, 22]
   * str = "Hello goorm!"
