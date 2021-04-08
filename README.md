@@ -336,8 +336,11 @@ mem.clear()	print(mem) => {}
   * 딕셔너리에 'C' = 3 을 추가할 때 코드
 * del D['C']
   * 딕셔너리에서 'C':3을 삭제
-
-
+* 딕셔너리에 key가 있는지 확인하기
+  * data = "a"
+  * if data in dic
+  * data가 딕셔너리안에 있다면 true
+  * data가 딕셔너리안에 없다면 false
 
 # 튜플(Tuple)과 집합(Set)
 
@@ -493,8 +496,50 @@ mem.clear()	print(mem) => {}
   * 데이터를 한 줄에 표현하고자 한다면 end 용법을 사용한다.
   * 조건식의 변수를 여러 개 사용 가능하다.
   * 딕셔너리에 사용할 때는 Items라는 객체로 접근해야 한다.
-
-
+* for문 활용
+  * for in 값의 집합자료형
+  * dic = {"human" : "사람", "dog" : "강아지", "carrot" : "당근"}
+  * oddnums = (1, 3, 5, 7, 9)
+  * evennums = [6, 8, 10, 22]
+  * str = "Hello goorm!"
+  * for i in oddnums:
+  * print(i, end = ' ')
+  * print()
+  * for i in evennums:
+  * print(i, end = ' ')
+  * print()
+  * for i in str :
+  * print(i, end = ' ') => H e l l o g o o r m !
+  * for key, val in dic.items():
+  * print(key, value, end = ' ') => human 사 람 dog 강 아 지 carrot 당 근
+  *  
+  * for num in [1,2,3,4,5,6,7] :    
+  * print(num)    
+  * 1
+  * 2
+  * ~
+  * 7
+  * for num in [1,2,3,4,5,6,7] :    
+  * print(num, end = ',')
+  * 1, 2, 3, 4, 5, 6, 7
+  * 
+  * num1 = [[1,2,3],[4,5,6]]
+  * for i, j, k in num1:
+  * print(i, j, k)  
+  * => 1 2 3
+  * => 4 5 6
+  * => a b c
+  *  
+  * fruits = {"apple" : "red", "banana" : "yellow", "grape" : "purple", "melon" : "green"} 
+  * for color in fruits.values():    
+  * print(color, end = ' ')  => red yellow purple green
+  * print() 
+  * for fruit in fruits.keys():  
+  * print(fruit, end = ' ')    => apple banana grape melon
+  * print() 
+  * for fruit, color in fruits.items():    
+  * print("%s의 색은 %s" %(fruit, color), end = ', ')
+  * => apple의 색은 red, banana의 색은 yellow, grape의 색은 purple, melon의 색은 green
 
 # 조건문과 제어문
 
@@ -533,6 +578,7 @@ mem.clear()	print(mem) => {}
   *  return a, b
   * n1, n2 = inputnums() // 반환 값이 두 개이니 두 변수에 초기화
 
+
 ## 매우 중요함(함수에서 처음 알게 된 부분)
 
 * 함수에서 전역변수를 사용할 때
@@ -558,6 +604,7 @@ mem.clear()	print(mem) => {}
     
 
     myfunc()
+
 
 
 
@@ -588,6 +635,8 @@ mem.clear()	print(mem) => {}
   * 반환 값들이 여러 개일 경우, 하나의 리스트나 튜플로 묶어 하나의 변수로 반환해준다.
   * 파이썬은 반환 값이 여러 개일때 자동으로 튜플로 반환한다.
   * return : 함수를 종료함과 동시에 값을 반환하는 키워드
+
+
 
 
 
@@ -661,7 +710,10 @@ mem.clear()	print(mem) => {}
 
     // A안에 있는 요소
 
-* 파일 열기/생성 및 쓰기
+
+
+
+# 파일 열기/생성 및 쓰기
 
   * 파일 객체 이름 = open("파일 경로/파일 이름","파일 열기 모드") 형식으로 생성
   * 파일 경로를 따로 지정하지 않으면 현재 지정된 경로에 파일을 생성한다.
@@ -678,47 +730,6 @@ mem.clear()	print(mem) => {}
     * write 안에 들어가야 할 인자는 문자열만 가능
   * f = open("data/test.txt","w")
   * f.close()
-
-<<<<<<< HEAD
-* 생성자와 메소드
-  * 생성자(Constructor) : 객체 생성과 동시에 초깃값을 설정하는 메소드
-    * ![생성자](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 6\생성자.png)
-    * 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
-    * 생성자 사용할 때
-      * ______init______ : 메소드 이름을 언더바 양쪽 2개로 설정하면 생성자로 인식된다.
-  * 메소드
-    * 인스턴스 메소드 : self로 인스턴스의 영역에 접근하는 메소드
-    * 정적 메소드 : self 매개변수를 갖지 않는 메소드
-      * 정적 메소드를 사용할 때 메소드 선언 윗줄에 @staticmethod라고 표시해야 한다.
-      * 인스턴스 영역에 접근할 수 없다. (표시하지 않으면 인스턴스 메소드로 인식된다.)
-    * 클래스 메소드 : 클래스 변수에 접근할 때 사용, cls로 클래스 변수를 전달 받는다.
-      * 클래스 변수에 접근해야 할 때 클래스 메소드로 접근하는 것이 더용이하다.
-      * 클래스 메소드를 사용할 때 메소드 선언 윗줄에 @classmethod라고 표시해야 한다.
-      * 클래스로 직접 접근 가능하다.
-      * self 같이 cls를 사용한다.
-* 클래스 상속
-  * 클래스 상속 선언 방법
-    * class 부모클래스 :
-    * ~
-    * class 자식클래스(부모클래스):
-  * 클래스에서 상속은 필수 기능이다.
-  * 상속을 받는 자식 클래스는 부모 클래스의 메소드와 변수를 가져와 사용할 수 있다.
-  * 메소드를 재정의(오버로딩)할 수도 있다.
-  * 인스턴스의 영역에 찾고자 하는 변수가 없을때 
-    * 클래스 영역으로 이동하여 해당 변수를 찾는다.
-    * 클래스 영역에서도 없다면 부모 클래스로 이동해 변수를 찾는다.
-  * 1. 클래스 메소드의 클래스 변수 접근 범위
-       * 부모 클래스에서 선언된 클래스 메소드는 자식 클래스의 인스턴스의 클래스 변수를 참조한다.
-       * 클래스 메소드는 부모 클래스에서 클래스 메소드를 실행
-       * 자식 클래스 변수에 접근할 때 사용
-    2. 인스턴스의 메소드 접근 범위
-       * 자식 클래스로 생성한 인스턴스는 부모 클래스의 메소드에 접근할 수 있다.
-       * 부모 클래스로 생성한 메소드는 자식 클래스의 메소드에 접근할 수 없다.
-    3. 같은 이름으로 자식 클래스에서 재정의한 메소드
-       * 메소드 오버라이딩(Method Overriding) : 자식 클래스에서 부모 클래스의 메소드를 재정의하는 것
-  * print + print 는 두 줄로 출력된다.
-* 클래스 심화 개념
-
 * 파일 읽기 및 내용 추가
 
 * ![파일 읽기](https://user-images.githubusercontent.com/72541544/113278267-b03bab80-931c-11eb-9970-a8ed3aa7b417.png)
@@ -796,7 +807,8 @@ mem.clear()	print(mem) => {}
 
 
 
-* 클래스
+
+# 클래스
 
   * 인스턴스 : 생성된 객체는 클래스의 인스턴스
 
@@ -867,11 +879,102 @@ mem.clear()	print(mem) => {}
     3. 같은 이름으로 자식 클래스에서 재정의한 메소드
        * 메소드 오버라이딩(Method Overriding) : 자식 클래스에서 부모 클래스의 메소드를 재정의하는 것
   * print + print 는 두 줄로 출력된다.
-* 클래스 심화 개념
+
+
+# 클래스의 심화 개념
+
+* 같은 정보를 공유하는 인스턴스는 다향성을 가진다.
+* 다중상속
+  * 파이썬에서는 부모 클래스를 여러 개 상속할 수 있다.
+  * MRO(Method Resolution Order, 메소드 탐색 순서)에 따른다.
+    * 파이썬은 다중 상속을 하면 상속을 명시한 클래스 목록 중 왼쪽에서 오른쪽 순서로 메소드를 찾는다.
+      * class Third(First, Second):
+        * First 클래스의 메소드를 실행
+    * 클래스 변수의 이름이 같다면 클래스 메소드의 위치와 상관없이 왼쪽에 있는 클래스의 클래스 변수에 접근한다.
+      * Third(First, Second) 일 때
+      * third.printName()
+        * printName : Second에 있다.
+        * 이럴 경우, 실행은 Second에서 하지만 정적 클래스 변수는 First 클래스의 변수를 출력한다. (79page)
+* 파이썬에서는 오버로딩을 지원하지 않는다.
+  * 같은 이름의 메소드가 여러 번 선언되어 있다면 마지막 메소드가 실행된다.
+* 파이썬은 다른 언어와 다르게 자료형에 대해 굉장히 유연하다.
+* 빈 함수
+  * def empty():
+  * pass
 
 
 
+# 모듈
+
+* 효율성, 매우 복잡하고 긴 코드를 작성할 때 사용 용도에 따라 파일로 구분한 뒤, 다른 파일에서 해당 클래스나 함수가 필요할 때 가져와서 사용할 수 있다.
+* 타인이 만들어 놓은 코드를 자신의 코드에 활용할 수 있다.
+  * ex) 
+  * import random
+  * a = random.random()
+  * b = random.randrange(1, 10)
+  * c = ['a', 'b', 'c', 'd']
+  * d = random.choice(c)
+* import 모듈 이름
+  * .py를 제외한 파일명만 가능
+  * 포함하려는 파일이 현재 파일과 같은 디렉터리에 있어야 한다.
+* import : 다른 파일에 있는 함수를 현재 사용 중인 파일에 포함하기 위한 함수
+  * ex)
+  * calculator.py
+  * def add(a, b):
+    * return(a+b)
+  * def sub(a, b):
+    * return(a-b)
+  * main.py
+  * import calculator
+  * add_result = calculator.add(10,2)
+  * sub_result = calculator.sub(10,2)
+  * => main.py에서는 calculator.py 내에 있는 add, sub 함수를 빌려서 이용
+  * => 이를 '모듈을 import 했다'라고 한다.
+  * 만약 두 파일이 같은 경로에 있지 않다면 import 할 파일의 경로를 함께 적어주면 된다.
+* from 모듈 이름 import 모듈 함수
+  * ex)
+  * my_module.py
+  * def three_times(a):
+  * return a * 3
+  * main.py
+  * from my_module import three times
+  * print(three_times(10)) => 30
+* from A import B를 사용할 경우, 해당 함수 앞에 모듈 이름을 붙이지 않고도 사용할 수 있다.
+* from 모듈 이름 import * : 모듈 안에 있는 모든 함수를 사용
 
 
 
+# 예외처리
 
+* 프로그램 실행 중 특정 상황에 발생할 수 있는 예외의 경우를 미리 생각해서 그것을 처리할 수 있는 코드를 삽입하는 것
+
+* 오류의 종류
+  * SyntaxError : 잘못된 문법이나 표현을 사용해 주었을 때 발생
+  * ![SyntaxError](https://user-images.githubusercontent.com/72541544/113961341-ddc6ae80-9860-11eb-9fc6-cfa3010b2d2e.png)
+  * IndentationError : 들여쓰기가 잘못되었을 때 발생
+  * ![IndentationError](https://user-images.githubusercontent.com/72541544/113961343-def7db80-9860-11eb-97fe-252674b65c87.png)
+  * ZeroDivisionError : 0으로 다른 숫자를 나누려 했을 때 발생
+  * ![ZeroDivisionError](https://user-images.githubusercontent.com/72541544/113961348-e0290880-9860-11eb-96ad-100e68eabf58.png)
+  * 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
+* 오류 예외 처리하기
+  * try:
+  * 실행할 코드
+  * except 에러이름 as 메세지변수:
+  * 에러 발생시 실행할 코드
+* finally : try문 종결된 후 무조건 실행되는 문
+* except 문에 pass를 사용하면 아무 일도 없었던 것처럼 회피 가능
+* 오류를 발생시키는 방법
+  * try:
+  * raise NameError     // 의도적으로 오류 발생시킴, raise 명령어
+  * except NameError:
+  * print("NameError occurred")
+* 오류를 예외처리하기 위한 방법
+  * try ~ except, try ~ else, try ~ finally
+  * try :
+  * 10 / 0
+  * except ZeroDivisionError as e:
+  * print(e)
+  * else :
+  * print("Success")
+  * finally :
+  * print("ZeroDivisionError Check")
