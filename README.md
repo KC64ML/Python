@@ -894,11 +894,12 @@ mem.clear()	print(mem) => {}
 
 * 오류의 종류
   * SyntaxError : 잘못된 문법이나 표현을 사용해 주었을 때 발생
-  * ![SyntaxError](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 7\SyntaxError.png)
+  * ![SyntaxError](https://user-images.githubusercontent.com/72541544/113961341-ddc6ae80-9860-11eb-9fc6-cfa3010b2d2e.png)
   * IndentationError : 들여쓰기가 잘못되었을 때 발생
-  * ![IndentationError](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 7\IndentationError.png)
+  * ![IndentationError](https://user-images.githubusercontent.com/72541544/113961343-def7db80-9860-11eb-97fe-252674b65c87.png)
   * ZeroDivisionError : 0으로 다른 숫자를 나누려 했을 때 발생
-  * ![ZeroDivisionError](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 7\ZeroDivisionError.png)
+  * ![ZeroDivisionError](https://user-images.githubusercontent.com/72541544/113961348-e0290880-9860-11eb-96ad-100e68eabf58.png)
+  * 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
 * 오류 예외 처리하기
   * try:
   * 실행할 코드
