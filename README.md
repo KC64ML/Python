@@ -848,10 +848,76 @@ mem.clear()	print(mem) => {}
   * def empty():
   * pass
 
+#### 모듈
+
+* 효율성, 매우 복잡하고 긴 코드를 작성할 때 사용 용도에 따라 파일로 구분한 뒤, 다른 파일에서 해당 클래스나 함수가 필요할 때 가져와서 사용할 수 있다.
+* 타인이 만들어 놓은 코드를 자신의 코드에 활용할 수 있다.
+  * ex) 
+  * import random
+  * a = random.random()
+  * b = random.randrange(1, 10)
+  * c = ['a', 'b', 'c', 'd']
+  * d = random.choice(c)
+* import 모듈 이름
+  * .py를 제외한 파일명만 가능
+  * 포함하려는 파일이 현재 파일과 같은 디렉터리에 있어야 한다.
+* import : 다른 파일에 있는 함수를 현재 사용 중인 파일에 포함하기 위한 함수
+  * ex)
+  * calculator.py
+  * def add(a, b):
+    * return(a+b)
+  * def sub(a, b):
+    * return(a-b)
+  * main.py
+  * import calculator
+  * add_result = calculator.add(10,2)
+  * sub_result = calculator.sub(10,2)
+  * => main.py에서는 calculator.py 내에 있는 add, sub 함수를 빌려서 이용
+  * => 이를 '모듈을 import 했다'라고 한다.
+  * 만약 두 파일이 같은 경로에 있지 않다면 import 할 파일의 경로를 함께 적어주면 된다.
+* from 모듈 이름 import 모듈 함수
+  * ex)
+  * my_module.py
+  * def three_times(a):
+  * return a * 3
+  * main.py
+  * from my_module import three times
+  * print(three_times(10)) => 30
+* from A import B를 사용할 경우, 해당 함수 앞에 모듈 이름을 붙이지 않고도 사용할 수 있다.
+* from 모듈 이름 import * : 모듈 안에 있는 모든 함수를 사용
 
 
 
+#### 예외처리
 
+* 프로그램 실행 중 특정 상황에 발생할 수 있는 예외의 경우를 미리 생각해서 그것을 처리할 수 있는 코드를 삽입하는 것
 
-
-
+* 오류의 종류
+  * SyntaxError : 잘못된 문법이나 표현을 사용해 주었을 때 발생
+  * ![SyntaxError](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 7\SyntaxError.png)
+  * IndentationError : 들여쓰기가 잘못되었을 때 발생
+  * ![IndentationError](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 7\IndentationError.png)
+  * ZeroDivisionError : 0으로 다른 숫자를 나누려 했을 때 발생
+  * ![ZeroDivisionError](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 7\ZeroDivisionError.png)
+* 오류 예외 처리하기
+  * try:
+  * 실행할 코드
+  * except 에러이름 as 메세지변수:
+  * 에러 발생시 실행할 코드
+* finally : try문 종결된 후 무조건 실행되는 문
+* except 문에 pass를 사용하면 아무 일도 없었던 것처럼 회피 가능
+* 오류를 발생시키는 방법
+  * try:
+  * raise NameError     // 의도적으로 오류 발생시킴, raise 명령어
+  * except NameError:
+  * print("NameError occurred")
+* 오류를 예외처리하기 위한 방법
+  * try ~ except, try ~ else, try ~ finally
+  * try :
+  * 10 / 0
+  * except ZeroDivisionError as e:
+  * print(e)
+  * else :
+  * print("Success")
+  * finally :
+  * print("ZeroDivisionError Check")
