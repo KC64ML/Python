@@ -681,7 +681,7 @@ mem.clear()	print(mem) => {}
 
 * 생성자와 메소드
   * 생성자(Constructor) : 객체 생성과 동시에 초깃값을 설정하는 메소드
-    * ![생성자](D:\Computer_Science\Study\Python\Django_Python\Python\write\Day 6\생성자.png)
+    * ![생성자](https://user-images.githubusercontent.com/72541544/113958950-f03ee900-985c-11eb-8185-90dcad27196d.png)
     * 사진 주소 : [한 눈에 끝내는 파이썬3 기초](https://edu.goorm.io/lecture/17902/%ED%95%9C-%EB%88%88%EC%97%90-%EC%9D%BD%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC3-%EA%B8%B0%EC%B4%88)
     * 생성자 사용할 때
       * ______init______ : 메소드 이름을 언더바 양쪽 2개로 설정하면 생성자로 인식된다.
