@@ -506,9 +506,9 @@ mem.clear()	print(mem) => {}
   * print(i, end = ' ')
   * print()
   * for i in str :
-  * print(i, end = ' ')
+  * print(i, end = ' ') => H e l l o g o o r m !
   * for key, val in dic.items():
-  * print(key, value, end = ' ')
+  * print(key, value, end = ' ') => human 사 람 dog 강 아 지 carrot 당 근
   *  
   * for num in [1,2,3,4,5,6,7] :    
   * print(num)    
@@ -575,6 +575,7 @@ mem.clear()	print(mem) => {}
   *  return a, b
   * n1, n2 = inputnums() // 반환 값이 두 개이니 두 변수에 초기화
 
+
 ## 매우 중요함(함수에서 처음 알게 된 부분)
 
 * 함수에서 전역변수를 사용할 때
@@ -600,6 +601,7 @@ mem.clear()	print(mem) => {}
     
 
     myfunc()
+
 
 
 
@@ -630,6 +632,8 @@ mem.clear()	print(mem) => {}
   * 반환 값들이 여러 개일 경우, 하나의 리스트나 튜플로 묶어 하나의 변수로 반환해준다.
   * 파이썬은 반환 값이 여러 개일때 자동으로 튜플로 반환한다.
   * return : 함수를 종료함과 동시에 값을 반환하는 키워드
+
+
 
 
 
@@ -702,6 +706,8 @@ mem.clear()	print(mem) => {}
   * for i in A:
 
     // A안에 있는 요소
+
+
 
 
 # 파일 열기/생성 및 쓰기
@@ -798,6 +804,7 @@ mem.clear()	print(mem) => {}
 
 
 
+
 # 클래스
 
   * 인스턴스 : 생성된 객체는 클래스의 인스턴스
@@ -870,6 +877,7 @@ mem.clear()	print(mem) => {}
        * 메소드 오버라이딩(Method Overriding) : 자식 클래스에서 부모 클래스의 메소드를 재정의하는 것
   * print + print 는 두 줄로 출력된다.
 
+
 # 클래스의 심화 개념
 
 * 같은 정보를 공유하는 인스턴스는 다향성을 가진다.
@@ -890,6 +898,8 @@ mem.clear()	print(mem) => {}
 * 빈 함수
   * def empty():
   * pass
+
+
 
 # 모듈
 
